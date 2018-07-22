@@ -9,6 +9,7 @@
   <%= f.text_field :genre_id, list: "genres" %>
   <datalist id="genres">
     <% Genre.all.each do |g| %>
+      <% binding.pry %>
       <option value="<%= g.name %>">
     <% end %>
   </datalist>
