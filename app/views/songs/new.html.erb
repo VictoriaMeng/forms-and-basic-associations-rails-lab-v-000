@@ -8,9 +8,9 @@
   <%= f.label :genre_id %>
   <%= f.text_field :genre_id, list: "genres" %>
   <datalist id="genres">
-    <%= Genre.all.each do |g| %>
+    <% Genre.all.each do |g| %>
       <option value="<%= g.name %>">
-    <%= end %>
+    <% end %>
   </datalist>
   <br />
 
